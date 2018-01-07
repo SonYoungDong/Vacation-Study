@@ -10,7 +10,7 @@
         * IDE : 자기가 평소 쓰던 C IDE(Dev C++, Visual Studio 등등)
         * 하나의 데이터 패킷(쭉 늘여놓은 데이터)을 n개의 데이터로 만들어서 구조체 안에 있는 n개의 요소를 가진 배열에 저장하고 n개의 데이터를 모두 더한 결과를 출력하라.
         * 보다 세부한 설명
-            * [링크 참조](https://github.com/SongKJ00/Vacation-Study/HomeWork/password_cracker.md)
+            * [링크 참조](https://github.com/SongKJ00/Vacation-Study/blob/master/HomeWork/password_cracker.md)
     * 파일 분할(게시 폴더명 : FILE_SEPERATE_PRACTICE)
         * IDE : IAR
         * LED를 ON하는 함수를 led.c에 만들고 main.c에서는 led.h를 include하여 LED를 ON하라.
