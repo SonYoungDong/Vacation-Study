@@ -10,8 +10,7 @@
     * NoNamed GitHub에 제출
     * Vacation Study Repo에 각자 이름으로 폴더 만든 후 게시
     * 1주차, 2주차 등등 각 주 과제별로 폴더 생성
-    * 날짜, 과제명, 자기 이름 순으로 파일명 생성
-    * ex) VacationStudy/SangMin/1st_week/0107_test_sangmin.md 
+    * ex) VacationStudy/SangMin/1st_week/
 
 ### [Drone] 1학년 방학 과제 개발 방법
 * 하나의 과제당 하나의 프로젝트 생성하기(LED 점등, 0.5초 주기 점등 다 따로 프로젝트 생성)
