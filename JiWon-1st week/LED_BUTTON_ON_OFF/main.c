@@ -40,7 +40,7 @@
 #include "stm32l0xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-#include "led.h"
+
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -56,10 +56,18 @@ static void MX_GPIO_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
-
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+  UNUSED(GPIO_Pin);
+  
+  if(GPIO_Pin == USER_KEY_Pin) {
+    HAL_GPIO_TogglePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin);
+  }
+}
 
 /* USER CODE END 0 */
 
@@ -68,7 +76,6 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
 
-  LED_ON();
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -99,6 +106,7 @@ int main(void)
   while (1)
   {
   /* USER CODE END WHILE */
+
   /* USER CODE BEGIN 3 */
 
   }
@@ -171,10 +179,17 @@ static void MX_GPIO_Init(void)
   GPIO_InitTypeDef GPIO_InitStruct;
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : USER_KEY_Pin */
+  GPIO_InitStruct.Pin = USER_KEY_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(USER_KEY_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : GREEN_LED_Pin */
   GPIO_InitStruct.Pin = GREEN_LED_Pin;
@@ -182,6 +197,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
   HAL_GPIO_Init(GREEN_LED_GPIO_Port, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI4_15_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI4_15_IRQn);
 
 }
 

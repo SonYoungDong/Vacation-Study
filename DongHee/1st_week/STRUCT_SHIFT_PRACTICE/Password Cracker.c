@@ -10,7 +10,7 @@ typedef struct
 unsigned char bits[20][8] = 
 	{
 		{0, 0, 0, 0, 0, 0, 0, 0},
-	    {0, 0, 1, 0, 0, 0, 0, 0},
+	        {0, 0, 1, 0, 0, 0, 0, 0},
 		{0, 0, 0, 0, 0, 1, 1, 0},
 		{1, 1, 1, 1, 1, 1, 1, 1},
 		{0, 1, 0, 0, 0, 0, 0, 0},
@@ -37,7 +37,7 @@ int main()
 	int i, tmp;
 	int temp = 0;
 	
-	for(i = 0; i < 3; i++)
+	for(i = 0; i < 8; i++)
 	{
 		tmp = getData(i);
 		data.arr[i] = tmp;

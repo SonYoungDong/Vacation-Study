@@ -68,7 +68,6 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
 
-  LED_ON();
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -98,7 +97,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    led_on();
   /* USER CODE END WHILE */
+
   /* USER CODE BEGIN 3 */
 
   }

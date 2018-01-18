@@ -40,7 +40,7 @@
 #include "stm32l0xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-#include "led.h"
+
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -68,7 +68,6 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
 
-  LED_ON();
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -99,6 +98,7 @@ int main(void)
   while (1)
   {
   /* USER CODE END WHILE */
+
   /* USER CODE BEGIN 3 */
 
   }
