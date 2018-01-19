@@ -1,0 +1,46 @@
+Configuration	GREEN_LED
+STM32CubeMX 	4.22.1
+Date	01/17/2018
+MCU	STM32L073RZTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+21	PA5	GPIO_Output	GREEN_LED
+46	PA13	SYS_SWDIO	
+49	PA14	SYS_SWCLK	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : GREEN_LED
+Project Folder : C:\Users\dsm2017\Desktop\ALL\GREEN_LED
+Toolchain / IDE : EWARM
+Firmware Package Name and Version : STM32Cube FW_L0 V1.10.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+
