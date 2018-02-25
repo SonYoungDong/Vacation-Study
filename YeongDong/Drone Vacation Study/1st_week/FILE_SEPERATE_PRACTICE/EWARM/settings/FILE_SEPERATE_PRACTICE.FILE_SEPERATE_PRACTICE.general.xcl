@@ -1,0 +1,15 @@
+"D:\IAR\arm\bin\armproc.dll" 
+
+"D:\IAR\arm\bin\armstlink2.dll" 
+
+"D:\Drone Vacation Study\1st_week\FILE_SEPERATE_PRACTICE\EWARM\FILE_SEPERATE_PRACTICE\Exe\FILE_SEPERATE_PRACTICE.out" 
+
+--plugin "D:\IAR\arm\bin\armbat.dll" 
+
+--device_macro "D:\IAR\arm\config\debugger\ST\STM32L0xx.dmac" 
+
+--flash_loader "D:\IAR\arm\config\flashloader\ST\FlashSTM32L07xxZ.board" 
+
+
+
+

@@ -1,0 +1,338 @@
+###############################################################################
+#
+# IAR ELF Linker V8.11.2.13589/W32 for ARM                25/Feb/2018  22:43:56
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\Drone Vacation Study\1st_week\TIMER_1\EWARM\TIMER_1\Exe\TIMER_1.out
+#    Map file     =  
+#        D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\List\TIMER_1.map
+#    Command line =  
+#        -f C:\Users\dsm2017\AppData\Local\Temp\EWDA90.tmp ("D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\main.o" "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\startup_stm32l073xx.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal.o" "D:\Drone
+#        Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_cortex.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_dma.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_flash.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_flash_ex.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_flash_ramfunc.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_gpio.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_i2c.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_i2c_ex.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_msp.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_pwr.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_pwr_ex.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_rcc.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_rcc_ex.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_tim.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_hal_tim_ex.o"
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\stm32l0xx_it.o" "D:\Drone
+#        Vacation Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj\system_stm32l0xx.o"
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull -o
+#        "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM\TIMER_1\Exe\TIMER_1.out" --map "D:\Drone
+#        Vacation Study\1st_week\TIMER_1\EWARM\TIMER_1\List\TIMER_1.map"
+#        --config "D:\Drone Vacation
+#        Study\1st_week\TIMER_1\EWARM/stm32l073xx_flash.icf" --semihosting
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0802ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x20000000 to 0x20004fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A0":                                       0xc0
+  .intvec            ro code  0x08000000    0xc0  startup_stm32l073xx.o [1]
+                            - 0x080000c0    0xc0
+
+"P1":                                     0x1168
+  .text              ro code  0x080000c0   0x70c  stm32l0xx_hal_rcc.o [1]
+  .text              ro code  0x080007cc     0xc  stm32l0xx_hal.o [1]
+  .text              ro code  0x080007d8    0x28  stm32l0xx_hal.o [1]
+  .text              ro code  0x08000800    0x36  I32DivMod.o [4]
+  .text              ro code  0x08000836     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08000838    0xa6  stm32l0xx_hal_cortex.o [1]
+  .text              ro code  0x080008de     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x080008e0     0x2  IntDivZer.o [4]
+  .text              ro code  0x080008e2     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x080008e4   0x392  stm32l0xx_hal_tim.o [1]
+  .text              ro code  0x08000c76     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08000c78    0x70  stm32l0xx_hal_msp.o [1]
+  .text              ro code  0x08000ce8     0x2  stm32l0xx_hal_tim.o [1]
+  .text              ro code  0x08000cea     0x2  stm32l0xx_hal_tim.o [1]
+  .text              ro code  0x08000cec     0x2  stm32l0xx_hal_tim.o [1]
+  .text              ro code  0x08000cee     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08000cf0   0x148  main.o [1]
+  .text              ro code  0x08000e38     0x2  stm32l0xx_hal_tim.o [1]
+  .text              ro code  0x08000e3a     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08000e3c   0x1cc  stm32l0xx_hal_gpio.o [1]
+  .text              ro code  0x08001008    0x20  stm32l0xx_hal.o [1]
+  .text              ro code  0x08001028    0x4e  stm32l0xx_hal_tim_ex.o [1]
+  .text              ro code  0x08001076     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08001078    0x74  system_stm32l0xx.o [1]
+  .text              ro code  0x080010ec    0x3c  packbits_init_single.o [4]
+  .text              ro code  0x08001128    0x28  data_init.o [4]
+  .text              ro code  0x08001150    0x24  stm32l0xx_it.o [1]
+  .text              ro code  0x08001174    0x10  stm32l0xx_hal.o [1]
+  .iar.init_table    const    0x08001184    0x10  - Linker created -
+  .text              ro code  0x08001194    0x1a  cmain.o [4]
+  .text              ro code  0x080011ae     0x4  low_level_init.o [3]
+  .text              ro code  0x080011b2     0x8  exit.o [3]
+  .text              ro code  0x080011ba     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x080011bc     0xa  cexit.o [4]
+  .text              ro code  0x080011c6     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x080011c8    0x14  exit.o [5]
+  .text              ro code  0x080011dc    0x10  startup_stm32l073xx.o [1]
+  .text              ro code  0x080011ec     0xc  cstartup_M.o [4]
+  .text              ro code  0x080011f8     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x080011fa     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x080011fc     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x080011fe     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08001200     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08001202     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08001204     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08001206     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08001208     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x0800120a     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x0800120c     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x0800120e     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08001210     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08001212     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08001214     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08001216     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08001218     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x0800121a     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x0800121c     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x0800121e     0x2  startup_stm32l073xx.o [1]
+  .text              ro code  0x08001220     0x2  startup_stm32l073xx.o [1]
+  .rodata            const    0x08001222     0x0  packbits_init_single.o [4]
+  Initializer bytes  const    0x08001222     0x6  <for P2-1>
+                            - 0x08001228  0x1168
+
+"P2", part 1 of 2:                          0x40
+  P2-1                        0x20000000    0x40  <Init block>
+    .data            inited   0x20000000     0x4  system_stm32l0xx.o [1]
+    .bss             inited   0x20000004    0x38  main.o [1]
+    .bss             inited   0x2000003c     0x4  stm32l0xx_hal.o [1]
+                            - 0x20000040    0x40
+
+"P2", part 2 of 2:                         0x400
+  CSTACK                      0x20000040   0x400  <Block>
+    CSTACK           uninit   0x20000040   0x400  <Block tail>
+                            - 0x20000440   0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x6 (9% of destination):
+          0x08001222   0x6
+    1 destination range, total size 0x40:
+          0x20000000  0x40
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+D:\Drone Vacation Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj: [1]
+    main.o                      328        5       56
+    startup_stm32l073xx.o       268
+    stm32l0xx_hal.o             100        1        4
+    stm32l0xx_hal_cortex.o      166
+    stm32l0xx_hal_gpio.o        460
+    stm32l0xx_hal_msp.o         112
+    stm32l0xx_hal_rcc.o       1 804
+    stm32l0xx_hal_tim.o         922
+    stm32l0xx_hal_tim_ex.o       78
+    stm32l0xx_it.o               36
+    system_stm32l0xx.o          116                 4
+    -------------------------------------------------
+    Total:                    4 390        6       64
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl6M_tlf.a: [3]
+    exit.o                        8
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                       12
+
+rt6M_tl.a: [4]
+    I32DivMod.o                  54
+    IntDivZer.o                   2
+    cexit.o                      10
+    cmain.o                      26
+    cstartup_M.o                 12
+    data_init.o                  40
+    packbits_init_single.o       60
+    -------------------------------------------------
+    Total:                      204
+
+shb_l.a: [5]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Linker created                        16    1 024
+-----------------------------------------------------
+    Grand Total:              4 626       22    1 088
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x08001184          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08001194          --   Gb  - Linker created -
+?main                   0x08001195         Code  Gb  cmain.o [4]
+AHBPrescTable           0x080010d0   0x10  Data  Gb  system_stm32l0xx.o [1]
+CSTACK$$Base            0x20000040          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000440          --   Gb  - Linker created -
+HAL_GPIO_Init           0x08000e3d  0x194  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GPIO_TogglePin      0x08000fe9    0x8  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GPIO_WritePin       0x08000fd9   0x10  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GetTick             0x080007cd    0xc  Code  Wk  stm32l0xx_hal.o [1]
+HAL_IncTick             0x08001175   0x10  Code  Wk  stm32l0xx_hal.o [1]
+HAL_Init                0x08001009   0x1a  Code  Gb  stm32l0xx_hal.o [1]
+HAL_InitTick            0x080007d9   0x28  Code  Wk  stm32l0xx_hal.o [1]
+HAL_MspInit             0x08000c79   0x3c  Code  Gb  stm32l0xx_hal_msp.o [1]
+HAL_NVIC_EnableIRQ      0x08000875    0xe  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority    0x0800086d    0x8  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_RCC_ClockConfig     0x08000545  0x16a  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq     0x0800072d    0x6  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                        0x080006bd   0x6c  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_OscConfig       0x080000c1  0x46c  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_SYSTICK_CLKSourceConfig
+                        0x080008ab   0x18  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_SYSTICK_Config      0x08000883   0x28  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_SYSTICK_IRQHandler  0x080008c3    0x8  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_TIMEx_MasterConfigSynchronization
+                        0x08001029   0x4e  Code  Gb  stm32l0xx_hal_tim_ex.o [1]
+HAL_TIM_Base_Init       0x080008e5   0x2c  Code  Gb  stm32l0xx_hal_tim.o [1]
+HAL_TIM_Base_MspInit    0x08000cb5   0x2a  Code  Gb  stm32l0xx_hal_msp.o [1]
+HAL_TIM_Base_Start_IT   0x08000911   0x14  Code  Gb  stm32l0xx_hal_tim.o [1]
+HAL_TIM_ConfigClockSource
+                        0x08000aad   0xd0  Code  Gb  stm32l0xx_hal_tim.o [1]
+HAL_TIM_IRQHandler      0x08000995  0x118  Code  Gb  stm32l0xx_hal_tim.o [1]
+HAL_TIM_PeriodElapsedCallback
+                        0x08000cf1   0x1a  Code  Gb  main.o [1]
+HardFault_Handler       0x08001153    0x2  Code  Gb  stm32l0xx_it.o [1]
+MX_TIM2_Init            0x08000dd1   0x52  Code  Lc  main.o [1]
+NMI_Handler             0x08001151    0x2  Code  Gb  stm32l0xx_it.o [1]
+NVIC_SetPriority        0x08000839   0x34  Code  Lc  stm32l0xx_hal_cortex.o [1]
+PLLMulTable             0x080010e0    0xc  Data  Gb  system_stm32l0xx.o [1]
+PendSV_Handler          0x08001157    0x2  Code  Gb  stm32l0xx_it.o [1]
+RCC_SetFlashLatencyFromMSIRange
+                        0x08000755   0x5e  Code  Lc  stm32l0xx_hal_rcc.o [1]
+Region$$Table$$Base     0x08001184          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08001194          --   Gb  - Linker created -
+SVC_Handler             0x08001155    0x2  Code  Gb  stm32l0xx_it.o [1]
+SysTick_Handler         0x08001159    0xc  Code  Gb  stm32l0xx_it.o [1]
+SystemClock_Config      0x08000d57   0x7a  Code  Gb  main.o [1]
+SystemCoreClock         0x20000000    0x4  Data  Gb  system_stm32l0xx.o [1]
+SystemInit              0x08001079   0x40  Code  Gb  system_stm32l0xx.o [1]
+TIM2_IRQHandler         0x08001165    0xa  Code  Gb  stm32l0xx_it.o [1]
+TIM_Base_SetConfig      0x08000b89   0x50  Code  Lc  stm32l0xx_hal_tim.o [1]
+TIM_CCxChannelCmd       0x08000c61   0x16  Code  Lc  stm32l0xx_hal_tim.o [1]
+TIM_ETR_SetConfig       0x08000c33   0x14  Code  Lc  stm32l0xx_hal_tim.o [1]
+TIM_ITRx_SetConfig      0x08000c23   0x10  Code  Lc  stm32l0xx_hal_tim.o [1]
+TIM_TI1_ConfigInputStage
+                        0x08000bdd   0x22  Code  Lc  stm32l0xx_hal_tim.o [1]
+TIM_TI2_ConfigInputStage
+                        0x08000bff   0x24  Code  Lc  stm32l0xx_hal_tim.o [1]
+__aeabi_idiv0           0x080008e1         Code  Gb  IntDivZer.o [4]
+__cmain                 0x08001195         Code  Gb  cmain.o [4]
+__exit                  0x080011c9   0x14  Code  Gb  exit.o [5]
+__iar_data_init3        0x08001129   0x28  Code  Gb  data_init.o [4]
+__iar_packbits_init_single3
+                        0x080010ed   0x3c  Code  Gb  packbits_init_single.o [4]
+__iar_program_start     0x080011ed         Code  Gb  cstartup_M.o [4]
+__iar_small_uidiv       0x08000801         Code  Gb  I32DivMod.o [4]
+__iar_small_uidivmod    0x08000801         Code  Gb  I32DivMod.o [4]
+__iar_systems$$module {Abs}
+                        0x00000001         Data  Gb  command line/config [2]
+__low_level_init        0x080011af    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32l073xx.o [1]
+_call_main              0x080011a1         Code  Gb  cmain.o [4]
+_exit                   0x080011bd         Code  Gb  cexit.o [4]
+_main                   0x080011ab         Code  Gb  cmain.o [4]
+exit                    0x080011b3    0x8  Code  Gb  exit.o [3]
+htim2                   0x20000004   0x38  Data  Gb  main.o [1]
+main                    0x08000d0b   0x4c  Code  Gb  main.o [1]
+uwTick                  0x2000003c    0x4  Data  Gb  stm32l0xx_hal.o [1]
+
+
+[1] = D:\Drone Vacation Study\1st_week\TIMER_1\EWARM\TIMER_1\Obj
+[2] = command line
+[3] = dl6M_tlf.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  4 626 bytes of readonly  code memory
+     22 bytes of readonly  data memory
+  1 088 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

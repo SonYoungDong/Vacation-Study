@@ -1,0 +1,15 @@
+"D:\IAR\arm\bin\armproc.dll" 
+
+"D:\IAR\arm\bin\armstlink2.dll" 
+
+"C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\2st_week\TIMER_1\EWARM\TIMER_1\Exe\TIMER_1.out" 
+
+--plugin "D:\IAR\arm\bin\armbat.dll" 
+
+--device_macro "D:\IAR\arm\config\debugger\ST\STM32L0xx.dmac" 
+
+--flash_loader "D:\IAR\arm\config\flashloader\ST\FlashSTM32L07xxZ.board" 
+
+
+
+
