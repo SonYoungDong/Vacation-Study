@@ -23,9 +23,9 @@ param([String]$debugfile = "");
 
 if ($debugfile -eq "")
 {
-& "D:\IAR\common\bin\cspybat" -f "D:\Drone Vacation Study\1st_week\USART_PRACTICE_1\EWARM\settings\USART_PRACTICE_1.USART_PRACTICE_1.general.xcl" --backend -f "D:\Drone Vacation Study\1st_week\USART_PRACTICE_1\EWARM\settings\USART_PRACTICE_1.USART_PRACTICE_1.driver.xcl" 
+& "D:\IAR\common\bin\cspybat" -f "C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_1\EWARM\settings\USART_PRACTICE_1.USART_PRACTICE_1.general.xcl" --backend -f "C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_1\EWARM\settings\USART_PRACTICE_1.USART_PRACTICE_1.driver.xcl" 
 }
 else
 {
-& "D:\IAR\common\bin\cspybat" -f "D:\Drone Vacation Study\1st_week\USART_PRACTICE_1\EWARM\settings\USART_PRACTICE_1.USART_PRACTICE_1.general.xcl" --debug_file=$debugfile --backend -f "D:\Drone Vacation Study\1st_week\USART_PRACTICE_1\EWARM\settings\USART_PRACTICE_1.USART_PRACTICE_1.driver.xcl" 
+& "D:\IAR\common\bin\cspybat" -f "C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_1\EWARM\settings\USART_PRACTICE_1.USART_PRACTICE_1.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_1\EWARM\settings\USART_PRACTICE_1.USART_PRACTICE_1.driver.xcl" 
 }

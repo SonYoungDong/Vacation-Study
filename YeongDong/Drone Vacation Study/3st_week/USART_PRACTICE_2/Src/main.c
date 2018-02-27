@@ -265,12 +265,7 @@ static void MX_USART2_UART_Init(void)
 
 }
 
-/** Configure pins as 
-        * Analog 
-        * Input 
-        * Output
-        * EVENT_OUT
-        * EXTI
+/** Pinout Configuration
 */
 static void MX_GPIO_Init(void)
 {
