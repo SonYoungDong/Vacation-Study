@@ -73,7 +73,7 @@ static void MX_USART2_UART_Init(void);
   }
   if(htim -> Instance == TIM7)
   {
-    if(cnt > 999)
+    if(cnt>=1000)
     {
       printf("%d \n\r",cnt); 
       cnt = 0;
@@ -250,7 +250,7 @@ static void MX_USART2_UART_Init(void)
 
   huart2.Instance = USART2;
   huart2.Init.BaudRate = 921600;
-  huart2.Init.WordLength = UART_WORDLENGTH_7B;
+  huart2.Init.WordLength = UART_WORDLENGTH_8B;
   huart2.Init.StopBits = UART_STOPBITS_1;
   huart2.Init.Parity = UART_PARITY_NONE;
   huart2.Init.Mode = UART_MODE_TX_RX;
@@ -265,7 +265,12 @@ static void MX_USART2_UART_Init(void)
 
 }
 
-/** Pinout Configuration
+/** Configure pins as 
+        * Analog 
+        * Input 
+        * Output
+        * EVENT_OUT
+        * EXTI
 */
 static void MX_GPIO_Init(void)
 {

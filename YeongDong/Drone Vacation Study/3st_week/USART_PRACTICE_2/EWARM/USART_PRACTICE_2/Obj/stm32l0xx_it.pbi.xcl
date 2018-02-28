@@ -1,16 +1,16 @@
-"D:\Drone Vacation Study\1st_week\USART_PRACTICE_2\Src\stm32l0xx_it.c"
+"C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_2\Src\stm32l0xx_it.c"
 -std=c11
 -ferror-limit=0
 -I
-D:\Drone Vacation Study\1st_week\USART_PRACTICE_2\EWARM/../Inc
+C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_2\EWARM/../Inc
 -I
-D:\Drone Vacation Study\1st_week\USART_PRACTICE_2\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc
+C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_2\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc
 -I
-D:\Drone Vacation Study\1st_week\USART_PRACTICE_2\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy
+C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_2\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy
 -I
-D:\Drone Vacation Study\1st_week\USART_PRACTICE_2\EWARM/../Drivers/CMSIS/Device/ST/STM32L0xx/Include
+C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_2\EWARM/../Drivers/CMSIS/Device/ST/STM32L0xx/Include
 -I
-D:\Drone Vacation Study\1st_week\USART_PRACTICE_2\EWARM/../Drivers/CMSIS/Include
+C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_2\EWARM/../Drivers/CMSIS/Include
 -I
 D:\IAR\arm\CMSIS\Include
 -I
@@ -18,15 +18,15 @@ D:\IAR\arm\inc
 -I
 D:\IAR\arm\inc\c
 -I
-D:\Drone Vacation Study\1st_week\USART_PRACTICE_2\Inc
+C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_2\Inc
 -I
-D:\Drone Vacation Study\1st_week\USART_PRACTICE_2\Drivers\STM32L0xx_HAL_Driver\Inc
+C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_2\Drivers\STM32L0xx_HAL_Driver\Inc
 -I
-D:\Drone Vacation Study\1st_week\USART_PRACTICE_2\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy
+C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_2\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy
 -I
-D:\Drone Vacation Study\1st_week\USART_PRACTICE_2\Drivers\CMSIS\Device\ST\STM32L0xx\Include
+C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_2\Drivers\CMSIS\Device\ST\STM32L0xx\Include
 -I
-D:\Drone Vacation Study\1st_week\USART_PRACTICE_2\Drivers\CMSIS\Include
+C:\Users\dsm2017\Desktop\Vacation-Study\YeongDong\Drone Vacation Study\3st_week\USART_PRACTICE_2\Drivers\CMSIS\Include
 -I
 D:\IAR\arm\CMSIS\Include
 -D__CHAR_BITS__=8

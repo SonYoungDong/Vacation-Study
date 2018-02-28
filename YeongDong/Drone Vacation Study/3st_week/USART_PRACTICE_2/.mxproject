@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=D:/Drone Vacation Study/1st_week/USART_PRACTICE_2/Inc
+HeaderPath=C:/Users/dsm2017/Desktop/Vacation-Study/YeongDong/Drone Vacation Study/3st_week/USART_PRACTICE_2/Inc
 HeaderFiles=stm32l0xx_it.h;stm32l0xx_hal_conf.h;main.h;
-SourcePath=D:/Drone Vacation Study/1st_week/USART_PRACTICE_2/Src
+SourcePath=C:/Users/dsm2017/Desktop/Vacation-Study/YeongDong/Drone Vacation Study/3st_week/USART_PRACTICE_2/Src
 SourceFiles=stm32l0xx_it.h;stm32l0xx_hal_conf.h;main.h;stm32l0xx_it.c;stm32l0xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
